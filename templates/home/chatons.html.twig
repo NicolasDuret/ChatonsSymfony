@@ -1,0 +1,35 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Visionneuse Chatons{% endblock %}
+
+{% block body %}
+    <h1>Visionneuse Chatons</h1>
+
+    <div class="card-deck">
+        <div class="card">
+            <img src="{{ asset("images/chatons/ChatonsMignons/chat1.png") }}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Chatons Mignons <3</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="{{ asset("images/chatons/ChatonsBizarres/moche1.png") }}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Chatons Chelous ^^'</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="{{ asset("images/Chiots/Chiots.png") }}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Chiots Mignons <3</h5>
+                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+        </div>
+
+    </div>
+{% endblock %}

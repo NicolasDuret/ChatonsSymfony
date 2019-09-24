@@ -1,0 +1,10 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Affichage d'un dossier{% endblock %}
+
+{% block body %}
+    <h1>Affichage des {{ nomDuDossier }}</h1>
+    {% for fichier in fichiers %}
+        <img src="{{ asset("/photos/" ~ nomDuDossier ~ "/" ~ fichier.filename) }}" class="img-thumbnail shadow-lg p-3 mb-5 rounded">
+    {% endfor %}
+{% endblock %}
